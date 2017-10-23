@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/colorWhite"
+    android:elevation="10dp"
+    android:visibility="invisible"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/sortUsers"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Button
+            android:id="@+id/btn_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="-2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_left_fill"
+            android:text="Followers"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <Button
+            android:id="@+id/btn_repo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border"
+            android:text="Repositories"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="181dp" />
+
+        <Button
+            android:id="@+id/btn_joined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_right"
+            android:text="Joined"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="287dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searchFor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <Button
+            android:id="@+id/btn_repos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="-2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_left_fill"
+            android:text="Repos"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <Button
+            android:id="@+id/btn_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_right"
+            android:text="Users"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="287dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Search For"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderBy" />
+
+    <LinearLayout
+        android:id="@+id/sortRepos"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <Button
+            android:id="@+id/btn_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="-2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_left_fill"
+            android:text="Stars"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <Button
+            android:id="@+id/btn_forks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border"
+            android:text="Forks"
+            tools:layout_editor_absoluteX="208dp"
+            tools:layout_editor_absoluteY="181dp" />
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_right"
+            android:text="Updated"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="287dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sort By"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Order By"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sortRepos" />
+
+    <LinearLayout
+        android:id="@+id/orderBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <Button
+            android:id="@+id/btn_asc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="-2dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_left_fill"
+            android:text="Asc"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <Button
+            android:id="@+id/btn_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_border_right"
+            android:text="Desc"
+            tools:layout_editor_absoluteX="236dp"
+            tools:layout_editor_absoluteY="287dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_apply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/btn_border_fill"
+        android:text="Apply search"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
